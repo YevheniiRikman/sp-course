@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Lab7.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab7"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="520" Height="410" FontFamily="Segoe UI">
+
+    <Grid>
+        <Button x:Name="HamburgerButton1" FontFamily="Segoe MDL2 Assets" VerticalAlignment="Top" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click_1" />
+        <SplitView x:Name="Split1" HorizontalAlignment="Left" Height="410"  Canvas.ZIndex="1" VerticalAlignment="Top" Width="370" IsPaneOpen="False">
+            <SplitView.Pane>
+                <StackPanel Background="Gray">
+                    <Button x:Name="HamburgerButton" FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Width="50" Height="50" Background="Transparent" Click="HamburgerButton_Click_1" />
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton1" Width="300" Height="50" Background="Transparent" HorizontalAlignment="Center">
+                            <StackPanel Orientation="Horizontal" Width ="300" HorizontalAlignment="Left">
+                                <SymbolIcon Symbol="Play" HorizontalAlignment="Left"/>
+                                <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="10,0,0,0">Main Page</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton2" Width="300" Height="50" Background="Transparent" HorizontalAlignment="Center" Click="MenuButton2_Click">
+                            <StackPanel Orientation="Horizontal" Width ="300" HorizontalAlignment="Left">
+                                <SymbolIcon Symbol="Setting" HorizontalAlignment="Left"/>
+                                <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="10,0,0,0">Action</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="MenuButton3" Width="300" Height="50" Background="Transparent" HorizontalAlignment="Center" Click="MenuButton3_Click">
+                            <StackPanel Orientation="Horizontal" Width ="300" HorizontalAlignment="Left">
+                                <TextBlock FontFamily="Segoe MDL2 Assets" VerticalAlignment="Center" FontSize="20" >&#xE946;</TextBlock>
+                                <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="10,0,0,0">About</TextBlock>
+                            </StackPanel>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </SplitView.Pane>
+            <Grid/>
+        </SplitView>
+        <TextBlock HorizontalAlignment="Left" Margin="50,51,0,0" FontSize="30" Text="Hi, this is Lab 7. My task was Calculator. Let`s GO!" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>
