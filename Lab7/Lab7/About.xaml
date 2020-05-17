@@ -44,9 +44,9 @@
         </SplitView>
         <Grid>
             <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,20,0,0">App Name: Calculator</TextBlock>
-            <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,45,0,0">Student name: Dima Sverchkov</TextBlock>
-            <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,70,0,0">Group: 535b</TextBlock>
-            <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,95,0,0">Year: 2019</TextBlock>
+            <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,45,0,0">Student name: Rikman Yevhenii</TextBlock>
+            <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,70,0,0">Group: 525st2</TextBlock>
+            <TextBlock HorizontalAlignment="Left" FontSize="18" Padding="60,95,0,0">Year: 2020</TextBlock>
         </Grid>
         
     </Grid>
